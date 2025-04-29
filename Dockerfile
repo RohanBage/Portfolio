@@ -12,7 +12,7 @@ COPY index.html .
 COPY styles.css .
 COPY script.js .
 COPY image ./image
-COPY "Updated Resume.pdf" .
+COPY "Updated_Resume.pdf" .
 
 # Expose port 80
 EXPOSE 80
