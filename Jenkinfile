@@ -6,11 +6,12 @@ pipeline {
         CONTAINER_NAME = 'portfolio_container'
     }
 
-    stage('Clone Repository') {
-        steps {
-            git branch: 'main', url: 'https://github.com/RohanBage/Portfolio.git'
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main', url: 'https://github.com/RohanBage/Portfolio.git'
+            }
         }
-    }
 
         stage('Build Docker Image') {
             steps {
